@@ -17,7 +17,7 @@ metadata:
     meta.helm.sh/release-name: 'nginx-ingress'
     kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ipFamilyPolicy: SingleStack
   ipFamilies:
     - IPv4
