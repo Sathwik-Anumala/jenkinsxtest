@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - Sathwik-Anumala/jenkinsxtest
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.54.202.103.163.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
