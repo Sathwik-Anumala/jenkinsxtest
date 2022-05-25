@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: /health
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/security-groups: sg-0d42240f60bb0b9ce, sg-0eade45556f969005
+    alb.ingress.kubernetes.io/subnets: subnet-00dd0a98b80351eca, subnet-0dbd7339ac58ebc2f, subnet-0c1d145be9589c4a6
+    alb.ingress.kubernetes.io/success-codes: 200,404
+    alb.ingress.kubernetes.io/target-type: ip
+    kubernetes.io/ingress.class: alb
+  labels:
+    helm.sh/chart: ingress-nginx-4.1.0
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/instance: nginx-ingress
+    app.kubernetes.io/version: "1.2.0"
+    app.kubernetes.io/part-of: ingress-nginx
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: controller
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ingress-nginx-controller-ingress
+  namespace: nginx
+spec:
+  rules:
+  - host: 
+    http:
+      paths:
+      - backend:
+          service:
+            name: ingress-nginx-controller
+            port:
+              number: 80
+        path: /*
+        pathType: ImplementationSpecific
