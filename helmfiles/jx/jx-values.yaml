@@ -38,7 +38,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: aa19521c473dd45e6a81bd67d8aae947-1004475246.us-west-2.elb.amazonaws.com
+    domain: 54.148.96.113.nip.io
     kind: ingress
     namespaceSubDomain: -jx.
     tls:

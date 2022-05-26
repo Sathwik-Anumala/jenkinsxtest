@@ -19,4 +19,4 @@ spec:
                 name: bucketrepo
                 port:
                   number: 80
-      host: bucketrepo-jx.aa19521c473dd45e6a81bd67d8aae947-1004475246.us-west-2.elb.amazonaws.com
+      host: bucketrepo-jx.54.148.96.113.nip.io
