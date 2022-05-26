@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Sathwik-Anumala
+    provider: github
+    repository: jenkinsx-node-sample
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: sathwik-anumala-jenkinsx-node-sample
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Sathwik-Anumala/jenkinsx-node-sample.git
+  org: Sathwik-Anumala
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkinsx-node-sample
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Sathwik-Anumala/jenkinsx-node-sample

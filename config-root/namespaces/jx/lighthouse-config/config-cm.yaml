@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         Sathwik-Anumala/jenkinsx-gradle-sample: true
+        Sathwik-Anumala/jenkinsx-node-sample: true
         Sathwik-Anumala/jenkinsxtest: true
     plank: {}
     pod_namespace: jx
@@ -21,6 +22,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         Sathwik-Anumala/jenkinsx-gradle-sample: merge
+        Sathwik-Anumala/jenkinsx-node-sample: merge
         Sathwik-Anumala/jenkinsxtest: merge
       queries:
       - labels:
@@ -34,6 +36,7 @@ data:
         repos:
         - Sathwik-Anumala/jenkinsxtest
         - Sathwik-Anumala/jenkinsx-gradle-sample
+        - Sathwik-Anumala/jenkinsx-node-sample
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - Sathwik-Anumala/jenkinsxtest
         - Sathwik-Anumala/jenkinsx-gradle-sample
+        - Sathwik-Anumala/jenkinsx-node-sample
       target_url: http://lighthouse-jx.54.148.96.113.nip.io/merge/status
 kind: ConfigMap
 metadata:
