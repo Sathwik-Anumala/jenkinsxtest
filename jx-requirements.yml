@@ -22,7 +22,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: 54.202.103.163.nip.io
+    domain: aa19521c473dd45e6a81bd67d8aae947-1004475246.us-west-2.elb.amazonaws.com
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
