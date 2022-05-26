@@ -13,6 +13,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'grafana'
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
     - host: grafana-jx-observability.54.148.96.113.nip.io
